@@ -1,0 +1,24 @@
+[app]
+title = 逆向MCP
+package.name = mcp.reverse
+package.domain = org.mcp.reverse
+source.dir = .
+source.include_exts = py,png,jpg,kv,atlas
+version = 1.0.0
+description = Android Reverse Engineering Toolkit
+author.name = artoolkit
+author.email = artoolkit@example.com
+orientation = all
+android.api = 34
+android.min_api = 21
+android.sdk = 34
+android.ndk = 25b
+android.build_tools = 34.0.0
+p4a.source.symlinks = True
+requirements = python3,kivy
+android.add_src = $(src.dir)
+android.add_assets = assets
+android.add_native_libraries = armeabi-v7a,arm64-v8a
+android.permissions = INTERNET,ACCESS_NETWORK_STATE,ACCESS_WIFI_STATE,WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE
+android.manifest.orientation = all
+android.icon = assets/ic_launcher.png
